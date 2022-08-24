@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f3f3;
+    margin: 0px;
+}
+
+/* Your code here */
+header {
+    background-color: #f8e910;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main section {
+    display: inline-block;
+    padding: 20px;
+}
