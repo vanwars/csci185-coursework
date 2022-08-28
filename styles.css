@@ -37,10 +37,15 @@ header h1 {
 h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 main, header > div {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
+}
+
+main > section {
+    margin: 10vh 0;
 }
