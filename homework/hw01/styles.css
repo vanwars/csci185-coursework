@@ -11,3 +11,60 @@ body {
 }
 
 /* Your CSS Code Here! */
+
+#contact {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 40px;
+}
+
+#contact-info .row {
+    display: grid;
+    grid-template-columns: 40px auto;
+    margin-bottom: 20px;
+}
+
+.row p {
+    margin: 0;
+}
+form .row1 {
+    display: grid;
+    grid-template-columns: 40% auto;
+    column-gap: 15px;
+}
+
+form .row {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    background: rgb(234, 232, 232);
+    border: none;
+    border-radius: 4px;
+}
+
+#submit {
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+
+#message {
+    width: 100%;
+    margin: 0;
+}
+
+/* #name {
+    width: 40%;
+}
+#email {
+    width: 55%;
+} */
