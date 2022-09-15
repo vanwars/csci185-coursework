@@ -35,7 +35,7 @@ section {
     padding: 50px 15vw;
 }
 
-#section2, #section4 {
+#section1, #section2 {
     display: flex;
     background-color: black;
     background-image: url('solar-eclipse-multiples.jpg');
@@ -53,7 +53,7 @@ section {
     width: 45vw;
 }
 
-#section4 {
+#section2 {
     background-position: center left;
     justify-content: flex-end;
 }
