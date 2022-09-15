@@ -23,7 +23,6 @@ header {
     align-items: flex-end; /* vertical-align text on the bottom */
     justify-content: center; /* horizontal-align text in the center */
     
-    
     background-image: url('solar-eclipse.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,10 +32,11 @@ header {
 }
 
 section {
-    padding: 50px 15vh;
+    padding: 50px 15vw;
 }
 
-#section2 {
+#section2, #section4 {
+    display: flex;
     background-color: black;
     background-image: url('solar-eclipse-multiples.jpg');
     background-repeat: no-repeat;
@@ -46,12 +46,18 @@ section {
     padding-left: 0px;
 }
 
-.text-container {
+.text-container, .text-container-alt {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    margin: 40px;
-    width: 50vw;
+    margin-left: 15vw;
+    width: 45vw;
 }
+
+#section4 {
+    background-position: center left;
+    justify-content: flex-end;
+}
+
 
 p {
     font-size: 1.2em;
@@ -67,8 +73,13 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    .text-container {
+    .text-container, .text-container-alt {
         background-color: rgba(255, 255, 255, 0.95);
-        width: calc(100vw - 100px);
+        width: 100%;
+        margin: 40px;
+    }
+
+    section {
+        padding: 40px;
     }
 }
