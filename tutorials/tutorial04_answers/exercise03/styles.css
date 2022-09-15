@@ -11,9 +11,6 @@ body {
     margin: 0;
 }
 
-section * {
-    border: solid 1px #000;
-}
 
 p, h2 {
     margin: 0;

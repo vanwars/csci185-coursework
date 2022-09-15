@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20vh 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #CCC;
+}
+
+
+#section1 {
+    background: #0c7474;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+#section1:hover {
+    background: purple;
+    width: 220px;
+    height: 220px;
+}
+
+#section2 {
+    transition: all 0.3s ease-out;
+}
+
+#section2:hover { 
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: rgba(115, 143, 241, 0.871);
+    transform: rotate(45deg);
+} 
+
+#section3 { 
+    transition: all 0.2s ease-out;
+    opacity: 0.9;
+    background-color: navy;
+    color: white;
+}
+#section3:hover { 
+    transform: skew(5deg);
+    opacity: 1;
+} 
