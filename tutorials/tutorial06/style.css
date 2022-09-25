@@ -58,14 +58,29 @@ button {
    min-height: 100vh;
 }
 
-h1 {
-    font-size: 2em;
-}
-
 
 /******************/
 /* Custom Classes */
 /******************/
+
+.high-contrast header {
+    background: black;
+    color: white;
+}
+.high-contrast .content {
+    background: white;
+    color: black;
+}
+.high-contrast header, .high-contrast nav {
+    border-bottom: solid 1px black;
+}
+.high-contrast header {
+    background: black;
+    color: white;
+}
+.high-contrast button {
+    color: black;
+}
 
 .ocean header {
    background: #434a6c;
@@ -98,21 +113,26 @@ h1 {
     border-bottom: solid 1px #774713;
 }
 
-.high-contrast header {
-    background: black;
-    color: white;
+
+.dyslexia-mode {
+    letter-spacing: 0.35ch;
+    word-spacing: 1.225ch; /* 3.5x letter-spacing */
+    font-variant-ligatures: none; /* explicitly disable ligatures */
+    line-height: 2.0;
+    color: black;
+    font-size: 120%;
 }
-.high-contrast .content {
-    background: white;
+
+.dyslexia-mode .content {
+    max-width: 800px;
+    align-self: center;
+}
+.dyslexia-mode header h1, 
+.dyslexia-mode button, 
+.dyslexia-mode .content {
     color: black;
 }
-.high-contrast header, .high-contrast nav {
-    border-bottom: solid 1px black;
-}
-.high-contrast header {
-    background: black;
-    color: white;
-}
-.high-contrast button {
-    color: black;
+
+.dyslexia-mode p {
+    margin-top: 3.5em;
 }
