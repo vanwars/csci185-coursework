@@ -3,28 +3,12 @@ function setup() {
     const canvasHeight = window.innerHeight; 
     createCanvas(canvasWidth, canvasHeight);
     
-    // ////////////
-    // // POINTS //
-    // ////////////
-    // // https://p5js.org/reference/#/p5/point
-    strokeWeight(5);
-    fill('red');    // fill is to fill in shapes
-    stroke('#3459af');  // stroke is the color of te outline.
-    point(110, 80);
-    point(180, 80);
-
-    circle(350, 100, 100);
-
-    fill('black'); 
-    stroke('white');
-    strokeWeight(1);
-    text("Here is some more text", 400, 40);
-
-
-
-
-
-
+    ////////////
+    // POINTS //
+    ////////////
+    // https://p5js.org/reference/#/p5/point
+    strokeWeight(10);
+    point(110, 20);
     point(120, 40);
     point(130, 20);
     point(140, 40);

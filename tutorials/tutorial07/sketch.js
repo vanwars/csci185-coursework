@@ -4,13 +4,17 @@ function setup() {
     createCanvas(canvasWidth, canvasHeight);
 
     // Exercise 1:
-    drawCircle();
+    drawCircle(300, 300, 50, 'yellow');
+    drawCircle(100, 200, 250, 'red');
+    drawCircle(600, 500, 150, 'blue');
 
     // Exercise 2: 
     drawOval();
 
     // Exercise 3:
-    drawBullseye();
+    drawBullseye(100, 300, 100, 'navy', 'white');
+    drawBullseye(200, 300, 50, 'orange', 'purple');
+    drawBullseye(300, 300, 25, 'yellow', 'red');
 
     // Exercise 4:
     drawFace();
@@ -21,9 +25,11 @@ function setup() {
 
 // modify this function so that it accepts and honors
 // the following parameters: centerX, centerY, size, and fillColor
-function drawCircle() {
-    fill('hotpink');
-    circle(100, 100, 100);
+
+// drawCircle(300, 300, 50, 'yellow');
+function drawCircle(centerX, centerY, size, fillColor) {
+    fill(fillColor);
+    circle(centerX, centerY, size);
 }
 
 // modify this function so that it accepts and honors
@@ -36,15 +42,15 @@ function drawOval() {
 
 // modify this function so that it accepts and honors
 // the following 3 parameters: centerX, centerY, and size
-function drawBullseye() {
-    fill('teal');
-    circle(100, 300, 100);
-    fill('navy');
-    circle(100, 300, 75);
-    fill('teal');
-    circle(100, 300, 50);
-    fill('navy');
-    circle(100, 300, 25);
+function drawBullseye(centerX, centerY, size, color1, color2) {
+    fill(color1);
+    circle(centerX, centerY, size);
+    fill(color2);
+    circle(centerX, centerY, size * .75); // convert to an expression
+    fill(color1);
+    circle(centerX, centerY, size * .5); // convert to an expression
+    fill(color2);
+    circle(centerX, centerY, size * .25); // convert to an expression
 }
 
 // modify this function so that it accepts and honors
