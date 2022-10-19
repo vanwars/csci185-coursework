@@ -10,75 +10,30 @@
 const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
 
-// set up the canvas:
-function setup() {
-    createCanvas(canvasWidth, canvasHeight);
-    let i = 0;
-    while(i < 100) {
-        const ball = {
-            x: randomIntFromInterval(300, 500),
-            y: randomIntFromInterval(0, canvasHeight),
-            d: randomIntFromInterval(5, 80),
-            speedX: 3,
-            speedY: 2
-        };
-        circle(ball.x, ball.y, ball.d);
-
-        i++;
-    }
-}
-
-// initialize variables outside of the function:
-// let x = 0;
-// let y = 0;
-// let d = 50;
-// let speedX = 3;
-// let speedY = 2;
-
-const ball1 = {
-    x: randomIntFromInterval(300, 500),
-    y: 0,
-    d: randomIntFromInterval(20, 50),
+const ball = {
+    x: 40,
+    y: 100,
+    d: 60,
     speedX: 3,
     speedY: 2
 };
 
-function randomIntFromInterval(min, max) { 
-	// min and max included 
-	return Math.floor(Math.random() * (max - min + 1) + min);
+// set up the canvas:
+function setup() {
+    createCanvas(canvasWidth, canvasHeight);
+    circle(ball.x, ball.y, ball.d);
+    drawGrid(canvasWidth, canvasHeight);
 }
+
 
 // animate the circle by changing the x and y position
 // every time the animation loop invokes the draw() function:
-// function draw() {
-//     clear();
-//     fill('hotpink');
-//     circle(ball1.x, ball1.y, ball1.d);
-//     ball1.x += ball1.speedX;
-//     ball1.y += ball1.speedY;
-//     // ball1.d += ball1.speedX / 4;
-    
-//     drawGrid(canvasWidth, canvasHeight);
-// }
-
-const palette = ['red', 'blue', 'green', 'purple', 'yellow'];
-
 function draw() {
-    let i = 0;
     clear();
-    frameRate(10);
-    while(i < 500) {
-        const color = palette[randomIntFromInterval(0, 4)];
-        fill(color);
-        const ball = {
-            x: randomIntFromInterval(0, canvasWidth),
-            y: randomIntFromInterval(0, canvasHeight),
-            d: randomIntFromInterval(5, 10),
-            speedX: 3,
-            speedY: 2
-        };
-        circle(ball.x, ball.y, ball.d);
-
-        i++;
-    }
+    fill('hotpink');
+    circle(ball.x, ball.y, ball.d);
+    ball.x += ball.speedX;
+    ball.y += ball.speedY;
+    
+    drawGrid(canvasWidth, canvasHeight);
 }
