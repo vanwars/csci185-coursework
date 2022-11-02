@@ -22,23 +22,24 @@ async function fetchCourses() {
             * Only view classes that meet on Tuesdays and Thursdays? 
 */
 function displayResults(data) {
-    // console.log(data);
-    console.log(data[0]);
-    console.log(data[0].Title)
-    console.log(data[0].Department);
-    console.log(data[0].Instructors[0].Name);
+    for (let i = 0; i < data.length; i++) {
+        const course = data[i];
+        console.log(course);
+        displayCourse(course) 
+    }
+}
 
-    // Target the element in the DOM
-    // Change it's inner content:
-    
+function displayCourse(course) {
+    let instructor = 'TBD';
+    if (course.Instructors.length > 0) {
+        instructor = course.Instructors[0].Name;
+    }
     const template = `
-        <section>
-            <h2>${data[0].Code}: ${data[0].Title}</h2>
-            <p>${data[0].Location.FullLocation}</p>
-            <p>${data[0].Instructors[0].Name}</p>
+        <section class="course">
+            <h2>${course.Code}: ${course.Title}</h2>
+            <p>${course.Location.FullLocation}</p>
+            <p>${instructor}</p>
         </section>
     `;
-
-    document.querySelector('#results').innerHTML = template;
-
+    document.querySelector('#results').insertAdjacentHTML('beforeend', template);
 }
