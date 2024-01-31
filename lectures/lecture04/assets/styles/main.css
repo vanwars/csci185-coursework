@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+a,
+strong {
+    font-size: 1.2rem;
+    line-height: 1.7em;
+}
+
+header,
+main,
+footer {
+    padding: 0 10vh;
+}
+
+header,
+footer {
+    background-color: #F0F0F0;
+    padding: 30px 10vh;
+}
+
+header strong,
+header a {
+    margin-right: 10px;
+}
+
+main {
+    min-height: 80vh;
+}
+
+main img {
+    max-width: 300px;
+}
