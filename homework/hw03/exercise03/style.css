@@ -1,0 +1,17 @@
+/* 
+   Tip: The @import link to the Google font needs to be on the first line
+   of the stylesheet (above this comment).
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}

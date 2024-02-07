@@ -23,6 +23,7 @@ li,
 a {
     line-height: 1.4em;
     font-size: 1.1rem;
+    margin: 0;
 }
 
 a,
@@ -124,13 +125,6 @@ main section h2 {
     margin-bottom: 20px;
 }
 
-#inspiration p {
-    margin: 0;
-}
-
-#inspiration li {
-    margin-bottom: 15px;
-}
 
 footer {
     background-color: #f06154;
