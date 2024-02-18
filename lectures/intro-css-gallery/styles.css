@@ -2,18 +2,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Your code here */
-
-header {
-    background-color: #2D93AD;
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 30px;
+/* find p tags that are descendents of section tags */
+section p {
+    font-weight: bold;
 }
 
-section {
-    border-width: 1px;
-    border-style: solid;
-    display: inline-block;
-    margin: 20px;
+/* find p tags that are direct children of section tags */
+section>p {
+    font-weight: bold;
 }

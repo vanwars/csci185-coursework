@@ -6,3 +6,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* header {
+    padding: 60px 15vw;
+}
+
+section {
+    padding: 60px 15vw;
+}
+
+footer {
+    padding: 60px 15vw;
+} */
+
+header,
+section,
+footer {
+    padding: 60px 15vw;
+}

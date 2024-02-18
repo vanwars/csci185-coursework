@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Malamondo"; 
+    src: url("../fonts/Malamondo.otf") format("opentype"); 
+}
+
+@font-face {
+    font-family: "Malamondo-Alt"; 
+    src: url('../fonts/MalamondoW01-Alt.woff2') format('woff2'),
+         url('../fonts/MalamondoW01-Alt.woff') format('woff'),
+         url("../fonts/MalamondoW01-Alt.ttf") format("truetype"); 
+}
+
+body {
+    color: white;
+    margin: 0;
+    background-color: #013672;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+/****************************/
+/* Student Style Rules Here */
+/****************************/
+
+
+
+
