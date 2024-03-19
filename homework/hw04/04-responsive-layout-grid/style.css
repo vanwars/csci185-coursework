@@ -26,27 +26,53 @@ body {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+}
+
+.header {
+    grid-column: 1 / span 3;
+}
+
+.navigation {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+}
+
+.ads {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.sidebar {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+}
+
+.main {
+    min-height: 70vh;
+}
+
+.footer {
+    grid-column: 1 / span 3;
+}
 
 
-/* Task 3 */
 
-.container {}
+@media (max-width: 900px) {
 
-.header {}
+    .container {
+        grid-template-columns: 1fr 3fr;
+    }
 
-.navigation {}
+    .header {
+        grid-column: 1 / span 2;
+    }
 
-.ads {}
-
-.sidebar {}
-
-.main {}
-
-.footer {}
-
-
-
-@media (max-width: 1020px) {}
+}
 
 
 @media (max-width: 720px) {}

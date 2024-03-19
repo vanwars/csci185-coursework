@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Parallax Simple</title>
+</head>
+
+<body>
+    <h1>How to handle images of varying sizes</h1>
+
+    <section id="demo1">
+        <h2>Option 1: img tag</h2>
+        <p>Note that each of the images is a different size, which makes things difficult to style.</p>
+        <div class="images">
+            <img src="images/img1.jpg" alt="first image" />
+            <img src="images/img2.jpg" alt="second image" />
+            <img src="images/img3.jpg" alt="third image" />
+        </div>
+    </section>
+
+    <section id="demo2">
+        <h2>Option 2: using object-fit setting</h2>
+        <p>By using the object-fit CSS property, you can crop images w/o having to edit them.</p>
+        <div class="images">
+            <img src="images/img1.jpg" alt="first image" />
+            <img src="images/img2.jpg" alt="second image" />
+            <img src="images/img3.jpg" alt="third image" />
+        </div>
+    </section>
+
+    <section id="demo3">
+        <h2>Option 3: using background images</h2>
+        <p>By using a background image, you can crop the image, position the image, apply filters, and include other
+            HTML elements inside of the image.</p>
+        <div class="images">
+            <div class="image img1">
+                <p>Label 1</p>
+            </div>
+            <div class="image img2">
+                <p>Label 2</p>
+            </div>
+            <div class="image img3">
+                <p>Label 3</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

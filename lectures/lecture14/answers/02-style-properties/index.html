@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h1>Selector Practice: Changing Style Properties</h1>
+    <p>Add event handlers to each of the 4 buttons below. When you click the button, the background color of the
+        corresponding box should change. Hints:</p>
+    <ul>
+        <li>Modify the function definitions in <code>main.js</code></li>
+        <li>Attach the functions to the buttons below by adding an <code>onclick</code> event handler.</li>
+    </ul>
+    <p><strong>Challenge:</strong> Try to create a "reset" button that changes all of the colors back to white.</p>
+    <header>
+        <button onclick="makeRed()">Red</button>
+        <button onclick="makeBlue()">Blue</button>
+        <button onclick="makePink()">Pink</button>
+        <button onclick="makeOrange()">Orange</button>
+        <button onclick="reset()">Reset</button>
+    </header>
+
+    <main>
+        <section id="section1" class="box">Turn Red</section>
+        <section id="section2" class="box">Turn Blue</section>
+        <section id="section3" class="box">Turn Pink</section>
+        <section id="section4" class="box">Turn Orange</section>
+    </main>
+
+</body>
+
+</html>

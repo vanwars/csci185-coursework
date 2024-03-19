@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h1>Selector Practice: Changing HTML Attributes</h1>
+    <p>Add event handlers to each of the 4 buttons below.
+        Modify both the HTML and JavaScript files so that when each button is clicked,
+        a different animal image and caption is shown.
+    </p>
+    <p><strong>Challenge:</strong> Add a fifth button that displays a new animal.</p>
+
+    <section class="photo-container">
+        <img id="current-image" src="images/cat.jpg" />
+    </section>
+    <p id="caption">This is a cat</p>
+
+    <div class="buttons">
+        <button aria-label="Cat" onclick="showCat()"></button>
+        <button aria-label="Bird" onclick="showBird()"></button>
+        <button aria-label="Fish" onclick="showFish()"></button>
+        <button aria-label="Dog" onclick="showDog()"></button>
+        <button aria-label="Sloth" onclick="showSloth()"></button>
+    </div>
+</body>
+
+</html>

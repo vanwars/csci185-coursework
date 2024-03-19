@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1,
+#caption {
+    text-align: center;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+
+#current-image {
+    height: 100%;
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 20px;
+    height: 20px;
+    background: #999;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #AAA;
+}

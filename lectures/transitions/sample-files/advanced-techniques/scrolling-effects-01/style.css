@@ -1,0 +1,45 @@
+:root {
+    --offsetX: -0px;
+    --offsetY: -0px;
+    --rotation: 0deg;
+}
+
+body {
+    height: 200vh;
+    font-family: Arial;
+    font-size: 22px;
+    text-align: center;
+}
+
+section {
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #000;
+}
+
+#div1 {
+    transform: rotate(var(--rotation));
+}
+
+#div2 {
+    transform: rotate(calc(var(--rotation) * -2));
+}
+
+#div3 {
+    transform: rotate(calc(var(--rotation) * 0.5));
+}
+
+
+#div4 {
+    transform: rotate(calc(var(--rotation) * -1.5));
+}

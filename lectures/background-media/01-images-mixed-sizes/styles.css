@@ -1,0 +1,73 @@
+/* Layout stuff (ignore) */
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+
+/* Option 1: regular image style */
+#demo1 img {
+    width: 100%;
+    height: 500px;
+}
+
+/* Option 2: object-fit */
+#demo2 img {
+    width: 100%;
+    height: 200px;
+    max-height: 500px;
+    object-fit: cover;
+    border: solid 1px black;
+}
+
+
+/* Option 3: Background image style */
+#demo3 .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 300px;
+    /* filter: grayscale(100%); */
+    /* https://www.w3schools.com/cssref/css3_pr_filter.asp */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#demo3 .image:hover {
+    filter: grayscale(100%);
+}
+
+.image p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.img1 {
+    background-image: url('images/img1.jpg');
+}
+
+.img2 {
+    background-image: url('images/img2.jpg');
+}
+
+.img3 {
+    background-image: url('images/img3.jpg');
+}
