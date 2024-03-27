@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+}

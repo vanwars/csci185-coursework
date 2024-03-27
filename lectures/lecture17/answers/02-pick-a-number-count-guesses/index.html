@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js" defer></script>
+    <title>Guessing Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Guessing Game</h1>
+    </header>
+    <main>
+        <section class="spread-out">
+            <div>
+                <input id="guess" type="text" placeholder="Pick a number">
+                <button onclick="check()">Guess</button>
+            </div>
+            <div>
+                Number of Guesses: <span id="num_guesses">0</span>
+            </div>
+        </section>
+        <div id="message"></div>
+    </main>
+</body>
+
+</html>

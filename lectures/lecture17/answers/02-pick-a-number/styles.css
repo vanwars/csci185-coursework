@@ -1,0 +1,10 @@
+body {
+    max-width: 400px;
+    margin: auto;
+}
+
+.spread-out {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
