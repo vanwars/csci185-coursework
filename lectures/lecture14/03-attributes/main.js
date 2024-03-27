@@ -3,7 +3,11 @@ function showCat() {
 }
 
 function showDog() {
-    console.log("This is a dog");
+    // what do we need to target?
+    const img = document.querySelector("#current-image");
+    const caption = document.querySelector("#caption");
+    img.src = "images/dog.jpg";
+    caption.innerHTML = "This is a cute puppy.";
 }
 
 function showBird() {

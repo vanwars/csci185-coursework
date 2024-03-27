@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Number Tester</title>
+</head>
+
+<body>
+    <header class="buttons">
+        <select id="folder">
+            <option value="scale4">Low</option>
+            <option value="scale5">High</option>
+        </select>
+        <button onclick="playNote('C_low')">C</button>
+        <button onclick="playNote('D')">D</button>
+        <button onclick="playNote('E')">E</button>
+        <button onclick="playNote('F')">F</button>
+        <button onclick="playNote('G')">G</button>
+        <button onclick="playNote('A')">A</button>
+        <button onclick="playNote('B')">B</button>
+        <button onclick="playNote('C_high')">C</button>
+    </header>
+    <main>
+        <audio></audio>
+    </main>
+</body>
+
+</html>

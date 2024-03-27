@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Lab 05: Font Switcher</title>
-      <link rel="stylesheet" href="../style.css">
-      <script src="index.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="index.js" defer></script>
 </head>
+
 <body class="high-contrast">
     <div class="container">
 
-        <header><h1>My Header</h1></header>
+        <header>
+            <h1>My Header</h1>
+        </header>
 
         <nav>
-            <button id="bigger" title="Make font bigger">A</button>
-            <button id="smaller" title="Make font smaller">A</button>
+            <button onclick="makeBigger()" id="bigger" title="Make font bigger">A</button>
+            <button onclick="makeSmaller()" id="smaller" title="Make font smaller">A</button>
         </nav>
 
         <div class="content">
@@ -28,4 +32,5 @@
 
     </div>
 </body>
+
 </html>

@@ -1,10 +1,20 @@
 function makeBigger() {
-   alert('make bigger!');
-};
+    const headerEl = document.querySelector("header");
+    headerEl.style.fontSize = "40px";
+
+    const contentEl = document.querySelector(".content");
+    contentEl.style.fontSize = "30px";
+
+    // document.querySelector("header").style.fontSize = "40px";
+}
 
 function makeSmaller() {
-   alert('make smaller!');
-};
+    const headerEl = document.querySelector("header");
+    headerEl.style.fontSize = "";
+
+    const contentEl = document.querySelector(".content");
+    contentEl.style.fontSize = "";
+}
 
 /*
 Tips:

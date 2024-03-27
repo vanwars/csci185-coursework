@@ -107,8 +107,9 @@ main section h2 {
 }
 
 .my-work {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    columns: 2;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
     column-gap: 30px;
     row-gap: 30px;
 }
@@ -119,6 +120,7 @@ main section h2 {
     background: rgba(255, 255, 255, 0.5);
     padding: 15px;
     border-radius: 5px;
+    break-inside: avoid-column;
 }
 
 .my-work h2 {
@@ -135,7 +137,8 @@ footer {
 
 @media screen and (max-width: 800px) {
     .my-work {
-        grid-template-columns: 1fr;
+        columns: 1;
+        /* grid-template-columns: 1fr; */
         padding: 0vh 5vw;
     }
 

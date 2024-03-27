@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="modal.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <button onclick="openModal()">Open</button>
+    </main>
+    <section id="my-modal" class="modal">
+        <div class="bg" aria-hidden="true"></div>
+        <section class="content" aria-hidden="true">
+            <header>
+                <h2>Modal Header</h2>
+                <button class="close-btn" aria-label="Close Modal" onclick="closeModal()">&times;</button>
+            </header>
+            <p>Modal content....</p>
+        </section>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="drawer.js" defer></script>
+</head>
+
+<body>
+    <main class="gallery">
+
+        <img onclick="openDrawer('bird')" src="https://picsum.photos/300/200?num=1" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=2" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=3" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=4" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=5" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=6" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=7" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=8" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=9" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=10" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=11" alt="image description" />
+        <img onclick="openDrawer()" src="https://picsum.photos/300/200?num=12" alt="image description" />
+
+    </main>
+    <div id="drawer" aria-hidden="true">
+        <header>
+            <h2>Hidden Drawer</h2>
+            <button class="close-btn" aria-label="Close Drawer" onclick="closeDrawer()">&times;</button>
+        </header>
+
+        <p>Hello world!</p>
+    </div>
+
+</body>
+
+</html>
