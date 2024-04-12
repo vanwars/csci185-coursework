@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="web-data.js" defer></script>
+    <title>Looping Exercises</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Loop Exercises: Task 5</h1>
+        </div>
+        <nav>
+            <a href="../task01/index.html">Task 1</a>
+            <a href="../task02/index.html">Task 2</a>
+            <a href="../task03/index.html">Task 3</a>
+            <a href="../task04/index.html">Task 4</a>
+            <a href="../task05/index.html">Task 5</a>
+        </nav>
+    </header>
+    <main>
+
+
+        <section>
+            <h2>Query and play a song</h2>
+            <p>When the "Get Song" button (below) is clicked, name, artist, album cover, and audio clip
+                of a song. Each song should be
+                represented in the following format (but the actual info should be different):
+            </p>
+            <code><pre>
+&lt;section class=&quot;song&quot;&gt;
+    &lt;h2&gt;Blowin' in the Wind&lt;/h2&gt;
+    &lt;img src=&quot;https://i.scdn.co/image/ab67616d0000b2737d214af8499aa95ad220f573&quot;&gt;
+    &lt;p&gt;Bob Dylan&lt;/p&gt;
+    &lt;audio controls src=&quot;https://p.scdn.co/mp3-preview/669fd8752...&quot;&gt;&lt;/audio&gt;
+&lt;/section&gt;
+            </pre>
+            </code>
+
+            <p>Note: you will not need to use a loop here. Just output the appropriate properties from the
+                <code>song</code> object!
+            </p>
+            <nav>
+                <button onclick="showSong()">Show Song</button>
+                <button onclick="clearContainer()">Clear</button>
+            </nav>
+            <div id="output_container" class="output"></div>
+        </section>
+    </main>
+
+</body>
+
+</html>

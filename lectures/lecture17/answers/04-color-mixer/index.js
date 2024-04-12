@@ -18,7 +18,7 @@ function updateColor() {
         yellowElement.value === "on" &&
         blueElement.value === "on"
     ) {
-        setBackgroundColor("black");
+        setBackgroundColor("#775533");
     } else if (redElement.value === "on" && yellowElement.value === "on") {
         setBackgroundColor("orange");
     } else if (yellowElement.value === "on" && blueElement.value === "on") {

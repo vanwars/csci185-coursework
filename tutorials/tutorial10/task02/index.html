@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="loops.js" defer></script>
+    <title>Looping Exercises</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Loop Exercises: Task 2</h1>
+        </div>
+        <nav>
+            <a href="../task01/index.html">Task 1</a>
+            <a href="../task02/index.html">Task 2</a>
+            <a href="../task03/index.html">Task 3</a>
+            <a href="../task04/index.html">Task 4</a>
+            <a href="../task05/index.html">Task 5</a>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2>Task 2: Draw 50 different images</h2>
+            <p>Now that you understand the code from Task 1, you are going to implement a new function.
+                Your function will output
+                <strong>50 different</strong> images to the
+                <strong><code>#output_container</code></strong> div element when the "Show
+                Images" button is clicked. Tips:
+            </p>
+            <ul>
+                <li>Make a function called <strong><code>drawImagesDifferent()</code></strong>. It should behave
+                    similarly to the function in Task #1, except each iteration should add a different image to the
+                    container (see the pattern below):
+                    <ul>
+                        <li>Image 1: https://picsum.photos/200/200?random=1</li>
+                        <li>Image 2: https://picsum.photos/200/200?random=2</li>
+                        <li>Image 3: https://picsum.photos/200/200?random=3</li>
+                        <li>...</li>
+                        <li>Image 50: https://picsum.photos/200/200?random=50</li>
+                    </ul>
+                </li>
+                <li>Don't forget to attach the function to the button's click event handler.</li>
+                <li>Implement the "Clear" button too.</li>
+            </ul>
+
+            <nav>
+                <button>Show Images</button>
+                <button>Clear</button>
+            </nav>
+            <div id="output_container" class="output"></div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

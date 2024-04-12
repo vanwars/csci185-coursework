@@ -16,14 +16,30 @@ function drawPlayer() {
     clear();
     fill(color);
     circle(x, y, width); // x position, y position, diameter
-    drawGrid(window.innerWidth, window.innerHeight);
+    // drawGrid(window.innerWidth, window.innerHeight);
 }
 
 function movePlayer(ev) {
     // open the console in your browser to see what happens :)
     console.log(ev.code);
+    if (ev.code === "ArrowUp") {
+        y = y - 5;
+    } else if (ev.code === "ArrowDown") {
+        y = y + 5;
+    } else if (ev.code === "ArrowLeft") {
+        x = x - 5;
+    } else if (ev.code === "ArrowRight") {
+        x = x + 5;
+    } else if (ev.code === "Space") {
+        width += 5;
+    } else if (ev.code === "Escape") {
+        width -= 5;
+    } else if (ev.code === "KeyB") {
+        color = "blue";
+    } else if (ev.code === "KeyR") {
+        color = "red";
+    }
 
-    // re-draw the player
     drawPlayer();
 }
 
