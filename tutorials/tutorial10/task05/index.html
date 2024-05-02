@@ -26,25 +26,13 @@
 
 
         <section>
-            <h2>Query and play a song</h2>
-            <p>When the "Get Song" button (below) is clicked, name, artist, album cover, and audio clip
-                of a song. Each song should be
-                represented in the following format (but the actual info should be different):
-            </p>
-            <code><pre>
-&lt;section class=&quot;song&quot;&gt;
-    &lt;h2&gt;Blowin' in the Wind&lt;/h2&gt;
-    &lt;img src=&quot;https://i.scdn.co/image/ab67616d0000b2737d214af8499aa95ad220f573&quot;&gt;
-    &lt;p&gt;Bob Dylan&lt;/p&gt;
-    &lt;audio controls src=&quot;https://p.scdn.co/mp3-preview/669fd8752...&quot;&gt;&lt;/audio&gt;
-&lt;/section&gt;
-            </pre>
-            </code>
+            <h2>Song Search</h2>
 
-            <p>Note: you will not need to use a loop here. Just output the appropriate properties from the
-                <code>song</code> object!
-            </p>
             <nav>
+
+                <label for="term">Search Term:</label>
+                <input type="text" id="term" name="term">
+
                 <button onclick="showSong()">Show Song</button>
                 <button onclick="clearContainer()">Clear</button>
             </nav>

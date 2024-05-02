@@ -22,3 +22,16 @@ const nameList = [
 ];
 
 // Your code goes here....
+const containerEl = document.querySelector("#output_container");
+
+function showNames() {
+    for (let i = 0; i < nameList.length; i++) {
+        console.log(i, nameList[i]);
+        const myTemplate = `<p>${nameList[i]}</p>`;
+        containerEl.insertAdjacentHTML("afterbegin", myTemplate);
+    }
+}
+
+function clearContainer() {
+    containerEl.innerHTML = "";
+}
